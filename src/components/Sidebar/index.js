@@ -20,15 +20,15 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SidebarMenu>
           <SidebarLink to="about">About</SidebarLink>
         </SidebarMenu>
-        <SidebarMenu>
-          <SidebarLink to="discover">Discover</SidebarLink>
-        </SidebarMenu>
-        <SidebarMenu>
+        {/* <SidebarMenu>
           <SidebarLink to="signup">Sign Up</SidebarLink>
-        </SidebarMenu>
+        </SidebarMenu> */}
         <SideBtnWrapper>
           <SidebarRoute to="/signin"> Sign In</SidebarRoute>
         </SideBtnWrapper>
+        <SidebarMenu>
+          <SidebarLink to="discover">Discover</SidebarLink>
+        </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
   );
